@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Opening - Animes Goro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-ghost'></i>
+                <div class="logo_name">Animes Goro</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Pesquisar</span> 
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Minha Conta</span>
+                </a>
+                <span class="tooltip">Minha Conta</span>
+            </li>
+            <li>
+                <a href="listaAnime.html">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Lista de Animes</span>
+                </a>
+                <span class="tooltip">Lista de Animes</span> 
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Chat</span>
+                </a>
+               <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="opening.html">
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Opening</span>
+                </a>
+                <span class="tooltip">Opening</span>
+            </li>
+            <li>
+                <a href="apoianos.html">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Apoia - Nos</span>
+                </a>
+                <span class="tooltip">Apoia - Nos</span>
+            </li>
+            <li>
+                <a href="configuracao.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configuração</span>
+                </a>
+                <span class="tooltip">Configuração</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="img/goroLG.jpg" alt="Me"> 
+                    <div class="name_job">
+                        <div class="name">Animes Goro</div>
+                        <div class="job">Venha Assistir</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <h1>Opening</h1>
+        <div class="navegacao">
+            <a href="videosMoti.html">Videos Motivacionais</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Opening</a>
+        </div>
+        <div class="videos">
+            <h2 class="title-espaco">86 Eighty Six</h2>
+            <iframe class="videoYT" width="660" height="315" src="https://www.youtube.com/embed/7YnI1h8HNZo?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Tokyo Ghoul</h2>
+            <iframe class="videoYT" width="660" height="315" width="560" height="315" src="https://www.youtube.com/embed/uMeR2W19wT0?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Guilty Crown</h2>
+            <iframe class="videoYT" width="660" height="315" src="https://www.youtube.com/embed/DjUtmbZt8zc?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>To Aru Majutsu No Index II</h2>
+            <iframe class="videoYT" width="660" height="315" src="https://www.youtube.com/embed/YKvnc7z0roM?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>Kimi ni Todoke</h2>
+            <iframe  class="videoYT" width="660" height="315" src="https://www.youtube.com/embed/yN8Rlp3Oi94?start=10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

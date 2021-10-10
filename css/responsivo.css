@@ -1,0 +1,683 @@
+/* Tela de Tablet */
+@media screen and (max-width: 1024px){
+
+    /* Imagem dos Slides */
+    .line{
+        margin-bottom: 6%;
+    }
+
+    .slide{
+        width: 800px;
+        height: 300px;
+    }
+
+    .balls{
+        margin-top: -90px;
+        margin-left: -10%;
+    }
+
+    #voltar{
+        top: 62%;
+    }
+    
+    #next{
+        top: 62%;
+    }
+
+    /* Imagem dos Últimos Episodios  */
+
+    .title-UT{
+        margin-top: 2%;
+    }
+
+    .utiMa{
+        width: 240px;
+    }
+
+    /* Tela de Login e Cadastro */
+
+    .text{
+        margin-left: -4%;
+    }
+
+    .btn_entrar{
+        margin-left: 6%;
+    }
+
+    /* Animes */
+
+    /* Lista de Animes */
+    .imagem{
+        width: 200px;
+    }
+
+    .imagem-image{
+        height: 260px;
+    }
+
+    /* Maoyuu */
+    .genero{
+        margin-left: -25%;
+    }
+
+    .cpa img{
+        width: 20%;
+    }
+
+    /* Danshi */
+    .genero2{
+        margin-left: -34%;
+    }
+
+    /* Tokyo Ravens */
+    .genero3{
+        margin-left: -16%;
+    }
+
+    /* Chat */
+    .personagemChat{
+        display: none;
+    }
+
+    .chat{
+        width: 100%;
+    }
+
+    /* Episodios */
+    .check_Caso{
+        margin-left: -71%;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+     /* Imagem dos Slides */
+     .line{
+        margin-bottom: 18%;
+    }
+
+    .slide{
+        width: 270px;
+        height: 200px;
+    }
+
+    .balls{
+        display: none;
+    }
+
+    #voltar{
+        display: none;
+    }
+    
+    #next{
+        display: none;
+    }
+
+    /* Imagem dos Últimos Episodios  */
+
+    .title-UT{
+        margin-top: 3%;
+    }
+
+    .utimosEp{
+        display: block;
+    }
+
+    .utiMa{
+        margin-bottom: 2%;
+        width: 250px;
+    }
+
+     /* Tela de Login e Cadastro */
+
+     .home{
+        margin-top: 30%;
+        margin-left: 10%;
+        padding-right: 10%;
+    }
+
+    .text{
+        margin-left: -25%;
+        background: transparent;     
+    }
+
+    .text input{
+        padding-right: -2%;
+        width: 230px;
+    }
+
+    .entrar{
+        margin-bottom: 2%;
+    }
+
+    .btn_entrar{
+        margin-left: 10%;
+        margin-bottom: 1%;
+
+    }
+
+     /* Animes */
+
+    /* Lista de Animes */
+    .imagem{
+        width: 200px;
+        margin-bottom: 4%;
+        margin-left: 10%;
+    }
+
+    .imagem-image{
+        height: 260px;
+    }
+
+    /* Maoyuu */
+    .genero hr{
+        margin-left: 22%;
+        margin-right: 3%;
+    }
+
+    .genero p{
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    .genero .diretor{
+        font-size: 15px;
+        margin-left: -9%;
+    }
+    
+    .genero .tpEp{
+        font-size: 15px;
+        margin-left: -1%;
+    }
+    
+    .genero .eps{
+        font-size: 15px;
+        margin-left: -30%;
+    }
+
+    .genero .ano{
+        font-size: 15px;
+        margin-left: -36%;
+    }
+
+    .cpa{
+        display: block;
+    }
+
+    .cpa img{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .description{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .description p{
+        font-size: 17px;
+    }
+
+    .linksEp{
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .ep h3{
+        font-size: 16px;
+    }
+
+    /* Danshi */
+    .genero2{
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 15px;
+    }
+
+    .genero2 p{
+        font-size: 16px;
+    }
+
+    /* Tokyo Ravens */
+    .genero3{
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .genero3 p{
+        font-size: 16px;
+    }
+
+    /* Chat */
+    .personagemChat{
+        display: none;
+    }
+
+    .chat{
+        padding: 0;
+        margin: 0;
+        margin-left: -14%;
+        width: 130%;
+    }
+
+    /* Opening e Videos Motivacionais*/
+    .videos h2{
+        font-size: 18px;
+        
+    }
+
+    .title-espaco{
+        margin-top: 10%;
+    }
+
+    .videos iframe{
+        width: 90%;
+        height: 1%;
+        margin-bottom: 5%;
+    }
+
+    /* Apoia - Nos */
+    .conteudo{
+        text-align: justify;
+    }
+
+    .conteudo p{
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .personagenFundo{
+        display: none;
+    }
+
+    /* Configuração */
+    .mudarCor{
+        margin-top: 6%;
+        margin-right: 4%;
+    }
+
+    .mudarCor h3{
+        font-size: 18px;
+    }
+
+    .mudarCor input{
+        margin-bottom: 2%;
+        font-size: 18px;
+    }
+
+    .mudarCor p{
+        font-size: 18px;
+    }
+
+    /* Episodios */
+    .title-EP{
+        font-size: 19px;
+        margin-bottom: 6%;
+    }
+
+    .video iframe{
+        width: 95%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    .btnEP a{
+        margin: 0;
+    }
+
+    .check_Caso{
+        margin: 0;
+        margin-left: -47%;
+        margin-right: -47%;
+    }
+
+    .comentarios input{
+        width:270px;
+    }
+
+    .comentarios textarea{
+        margin-top: 2%;
+        width: 270px;
+    }
+
+    .btn_comentar{
+        margin-top: 3%;
+    }
+
+    .btnEP1{
+        display: flex;
+        margin-bottom: 2%;
+    }
+
+    .btnAnT{
+        margin-left: 6%;
+    }
+
+    .btnPrxT{
+        margin-left: 26%;
+    }
+
+    .btnAn{
+        margin-top: 2%;
+        margin-left: 22%;
+    }
+
+    .btnPrx{
+        margin-left: 20%;
+    }
+
+    .btnEP{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Tela de Celular mais menor */
+@media screen and (max-width: 320px){
+    .line{
+        margin-bottom: 74%;
+    }
+
+    .slide{
+        width: 220px;
+        height: 200px;
+        margin-bottom: 60%;
+    }
+
+    .balls{
+        display: none;
+    }
+
+    #voltar{
+        display: none;
+    }
+    
+    #next{
+        display: none;
+    }
+
+     /* Imagem dos Últimos Episodios  */
+
+     .title-UT{
+        margin-top: 3%;
+    }
+
+    .utimosEp{
+        display: block;
+    }
+
+    .utiMa{
+        margin-bottom: 2%;
+        width: 200px;
+    }
+
+     /* Tela de Login e Cadastro */
+
+    .text{
+        margin-left: -25%;
+        background: transparent;   
+        margin-bottom: 14%;  
+    }
+
+    .text input{
+        padding-right: -2%;
+        width: 140px;
+    }
+
+    .entrar{
+        margin-bottom: 2%;
+    }
+
+    .btn_entrar{
+        margin-left: 10%;
+        margin-bottom: 1%;
+    }
+
+     /* Animes */
+
+    /* Lista de Animes */
+    .imagem{
+        width: 180px;
+        margin-bottom: 4%;
+        margin-left: 10%;
+    }
+
+    .imagem-image{
+        height: 260px;
+    }
+
+    /* Maoyuu */
+    .genero hr{
+        margin-left: 24%;
+        margin-right: 3%;
+    }
+
+    .genero p{
+        font-size: 15px;
+    }
+
+    .genero .diretor{
+        font-size: 15px;
+        margin-left: 10%;
+    }
+    
+    .genero .tpEp{
+        font-size: 15px;
+        margin-left: 18%;
+    }
+    
+    .genero .eps{
+        font-size: 15px;
+        margin-left: -18%;
+    }
+
+    .genero .ano{
+        font-size: 15px;
+        margin-left: -26%;
+    }
+
+    .cpa{
+        display: block;
+    }
+
+    .cpa img{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .description{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .description p{
+        font-size: 17px;
+    }
+
+    .linksEp{
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .ep h3{
+        font-size: 16px;
+    }
+
+    /* Danshi */
+    .genero2{
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 15px;
+    }
+
+    .genero2 p{
+        font-size: 16px;
+    }
+
+    /* Tokyo Ravens */
+    .genero3{
+        margin-right: 2%;
+        margin-left: 3%;
+    }
+
+    .genero3 p{
+        font-size: 16px;
+    }
+
+    /* Chat */
+    .personagemChat{
+        display: none;
+    }
+
+    .chat{
+        padding: 0;
+        margin: 0;
+        margin-left: -14%;
+        width: 130%;
+    }
+
+    /* Opening e Videos Motivacionais*/
+    .videos h2{
+        font-size: 18px;
+        
+    }
+
+    .title-espaco{
+        margin-top: 10%;
+    }
+
+    .videos iframe{
+        width: 90%;
+        height: 1%;
+        margin-bottom: 5%;
+    }
+
+    /* Apoia - Nos */
+    .conteudo{
+        text-align: justify;
+    }
+
+    .conteudo p{
+        margin-top: 5%;
+        margin-left: 2%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .personagenFundo{
+        display: none;
+    }
+
+    /* Configuração */
+    .mudarCor{
+        margin-top: 6%;
+        margin-right: 4%;
+    }
+
+    .mudarCor h3{
+        font-size: 18px;
+    }
+
+    .mudarCor input{
+        margin-bottom: 2%;
+        font-size: 18px;
+        width: 190px;
+    }
+
+    .mudarCor p{
+        font-size: 18px;
+    }
+
+    /* Episodios */
+    .title-EP{
+        font-size: 19px;
+        margin-bottom: 6%;
+    }
+
+    .video iframe{
+        width: 95%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
+    .btnEP a{
+        margin: 0;
+    }
+
+    .check_Caso{
+        margin: 0;
+        margin-left: -135%;
+        margin-right: -39%;
+    }
+
+    .comentarios input{
+        width:200px;
+    }
+
+    .comentarios textarea{
+        margin-top: 2%;
+        width: 200px;
+        margin-bottom: 10%;
+    }
+
+    .btn_comentar{
+        margin-top: 3%;
+    }
+
+    .btnEP1{
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .btnAnT{
+        margin-left: 6%;
+    }
+
+    .btnPrxT{
+        margin-left: 26%;
+    }
+
+    .btnAn{
+        margin-top: 2%;
+        margin-left: 22%;
+    }
+
+    .btnPrx{
+        margin-left: 20%;
+    }
+
+    .btnEP{
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+/* Laptop  */
+@media screen and (max-width: 1440px){
+
+    /* Home */
+    .line{
+        margin-bottom: 2%;
+    }
+
+    /* Episodios */
+    .check_Caso{
+        margin-left: -55%;
+    }
+
+    /* Chat */
+    .personagemChat{
+        display: none;
+    }
+    
+    /* Apoia-nos */
+    .personagenFundo{
+        margin-top: -5%;
+    }
+
+}

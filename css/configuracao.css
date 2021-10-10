@@ -1,0 +1,39 @@
+h3{
+    color: white;
+    margin-bottom: 1%;
+}
+
+.mudarCor{
+    border-bottom: 3px white solid;
+    color: white;
+    margin: 3% 3%;
+}
+
+.mudarCor input{
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    color: #4138a3;
+}
+
+#btn{
+    font-size: 17px;
+    color: white;
+    background-color: #11101d;
+    padding: 0.3%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: white;
+    color: #11101d;
+}

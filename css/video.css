@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+h1{
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    color: white;
+    border-bottom: 1px white solid;
+    text-align: center;
+    margin: 0% 30%;
+    margin-bottom: 3%;
+}
+
+.videos{
+    text-align: center;
+}
+
+.navegacao a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navegacao a:hover{
+    color: #3823f8;
+}
+
+.navegacao{
+    color: white;
+    border: 3px white solid;
+    padding: 1% 0.8% 0.8% 0.8%;
+    margin: 3% 2%;
+    box-shadow: 0 0 1em #3823f8;
+}
+
+.videoYT{
+    margin-bottom: 3%;
+}
+
+.chat{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.chat iframe{
+    margin-top: 3%;
+    border: 3px purple solid;
+    padding: 0.1%;
+    border-radius: 10px;
+    box-shadow: 0 0 1em white;
+}
+
+
+.personagemChat img{
+    width: 40%;
+    height: 30%;
+    float: right;
+    margin-top: 7.8%;
+}

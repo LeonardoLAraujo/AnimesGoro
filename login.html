@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Animes Goro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/script.js"></script>
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-ghost'></i>
+                <div class="logo_name">Animes Goro</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Pesquisar</span> 
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Minha Conta</span>
+                </a>
+                <span class="tooltip">Minha Conta</span>
+            </li>
+            <li>
+                <a href="listaAnime.html">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Lista de Animes</span>
+                </a>
+                <span class="tooltip">Lista de Animes</span> 
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Chat</span>
+                </a>
+               <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="opening.html">
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Opening</span>
+                </a>
+                <span class="tooltip">Opening</span>
+            </li>
+            <li>
+                <a href="apoianos.html">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Apoia - Nos</span>
+                </a>
+                <span class="tooltip">Apoia - Nos</span>
+            </li>
+            <li>
+                <a href="configuracao.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configuração</span>
+                </a>
+                <span class="tooltip">Configuração</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="img/goroLG.jpg" alt="Me"> 
+                    <div class="name_job">
+                        <div class="name">Animes Goro</div>
+                        <div class="job">Venha Assistir</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+
+    <form name="frm_entrarConta" method="POST">
+        <div class="home_content">
+            <div class="home">
+                <h1>Acesse Sua Conta</h1>
+                <div class="text">
+                    <p>Usuário ou E-mail</p>
+                    <input type="text" name="txt_usuario">
+                    <p>Senha</p>
+                    <input type="password" name="txt_senha">
+                </div>
+
+                <div class="btn_entrar">
+                    <input class="entrar" type="submit" name="txt_button" value="Entrar" onClick="document.frm_entrarConta.action='logar.php'" >
+                    <a href="cadastrar.html"><input type="button" name="txt_button" value="Cadastrar"></a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        let balls = document.querySelector('.balls');
+        let quant = document.querySelectorAll(".slides .image");
+        let atual = 0;
+        let image = document.getElementById('atual');
+        let next =  document.getElementById('next');
+        let voltar = document.getElementById('voltar');
+        let rolar = true;
+
+        for(let i = 0; i < quant.length; i++){
+            let div = document.createElement('div');
+            div.id = i;
+            balls.appendChild(div);
+        }
+
+        document.getElementById('0').classList.add('imgAtual');
+
+        let pos = document.querySelectorAll('.balls div');
+
+        for(let i=0; i < pos.length; i++){
+            pos[i].addEventListener('click', function(){
+                atual = pos[i].id;
+                rolar = false;
+                slide();
+            })
+        }
+
+        voltar.addEventListener('click', ()=>{
+            atual--;
+            rolar = false;
+            slide();
+        })
+
+        next.addEventListener('click', ()=>{
+            atual++;
+            rolar = false;
+            slide();
+        })
+
+        function slide(){
+            if(atual >= quant.length){
+                atual = 0;
+            }else if(atual < 0){
+                atual = quant.length - 1;
+            }
+
+            document.querySelector('.imgAtual').classList.remove(".imgAtual");
+            image.style.marginLeft  = -1024 * atual + 'px';
+            document.getElementById(atual).classList.add('imgAtual');
+        }
+
+        setInterval(() =>{
+            if(rolar == true){
+                atual++;
+                slide();
+            }else{
+                rolar = true;
+            }
+        },3000)
+    </script>
+
+</body>
+</html>

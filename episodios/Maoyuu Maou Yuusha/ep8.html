@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maoyuu Maou Yuusha - Episódio 8</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/episodios.css">
+    <link rel="stylesheet" href="../../css/responsivo.css">
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-ghost'></i>
+                <div class="logo_name">Animes Goro</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Pesquisar</span> 
+            </li>
+            <li>
+                <a href="../../index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="../../login.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Minha Conta</span>
+                </a>
+                <span class="tooltip">Minha Conta</span>
+            </li>
+            <li>
+                <a href="../../listaAnime.html">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Lista de Animes</span>
+                </a>
+                <span class="tooltip">Lista de Animes</span> 
+            </li>
+            <li>
+                <a href="../../chat.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Chat</span>
+                </a>
+               <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="../../opening.html">
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Opening</span>
+                </a>
+                <span class="tooltip">Opening</span>
+            </li>
+            <li>
+                <a href="../../apoianos.html">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Apoia-Nos</span>
+                </a>
+                <span class="tooltip">Apoia-Nos</span>
+            </li>
+            <li>
+                <a href="../../configuracao.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configuração</span>
+                </a>
+                <span class="tooltip">Configuração</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="../../img/goroLG.jpg" alt="Me"> 
+                    <div class="name_job">
+                        <div class="name">Animes Goro</div>
+                        <div class="job">Venha Assistir</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+       <h1 class="title-EP">Maoyuu Maou Yuusha - Episódio 8</h1>
+       <div class="video">
+            <iframe width="860" height="410" src="https://www.youtube.com/embed/D7nbwCZTbuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="btnEP">
+            <a href="ep7.html"><input class="btnAn" type="button" name="btn_anterior" value="Episódio Anterior"></a>
+            <a href="../../maoyuuMaou.html"><input class="btnAn" type="button" name="btn_anterior" value="Todos Episódio"></a>
+            <a href="ep9.html"><input class="btnPrx" type="button" name="btn_anterior" value="Proximo Episódio"></a>
+        </div>
+        <div class="comentarios">
+            <h3>Comentários</h3>
+            <input class="usu" type="text" name="txt_usuario" value="Usuario" size="33" maxlength="33">
+            <input class="email" type="text" name="txt_email" value="E-mail" size="35" maxlength="33"><br>
+            <textarea class="comentario" rows="10" cols="77" maxlength="500"></textarea>
+            <input class="check_Caso" type="checkbox" name="txt_casoUso" value="">Salvar meus dados neste navegador para a próxima vez que eu comentar.<br>
+            <input class="btn_comentar" type="button" name="btn_comentar" value="Comentar">
+        </div>
+    </div>
+
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animes Goro </title>
+    <meta name="author" content="Leonardo Leal">
+    <meta name="description" content="Aluno de Análise e Desenvolvimento de Sistema">
+    <meta name="keywords" content="sites, web, desenvolvimento, animes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <script src="js/script.js"></script>
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-ghost'></i>
+                <div class="logo_name">Animes Goro</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Pesquisar</span> 
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Minha Conta</span>
+                </a>
+                <span class="tooltip">Minha Conta</span>
+            </li>
+            <li>
+                <a href="listaAnime.html">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Lista de Animes</span>
+                </a>
+                <span class="tooltip">Lista de Animes</span> 
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Chat</span>
+                </a>
+               <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="opening.html">
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Opening</span>
+                </a>
+                <span class="tooltip">Opening</span>
+            </li>
+            <li>
+                <a href="apoianos.html">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Apoia - Nos</span>
+                </a>
+                <span class="tooltip">Apoia - Nos</span>
+            </li>
+            <li>
+                <a href="configuracao.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configuração</span>
+                </a>
+                <span class="tooltip">Configuração</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="img/goroLG.jpg" alt="Me"> 
+                    <div class="name_job">
+                        <div class="name">Animes Goro</div>
+                        <div class="job">Venha Assistir</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="line">
+            <h1>Animes da Semana</h1>
+        </div>
+        <div id="inicio">
+            <div class="slide">
+                <div class="slides">
+                    <div id="voltar" class="btn">
+                        <i class='bx bx-chevron-left' ></i>
+                    </div>
+                    <div id="next" class="btn"> 
+                        <i class='bx bx-chevron-right' ></i>
+                    </div>
+
+                    <div id="atual" class="image">
+                        <a href="maoyuuMaou.html"><img src="img/maoyuu.jpg" alt=""></a>
+                    </div>
+
+                    <div id="atual" class="image">
+                        <a href="danshiKouko.html"><img src="img/Dais.jpg" alt=""></a>
+                    </div>
+
+                    <div id="atual" class="image">
+                        <a href="tokyoRavens.html"><img src="img/tokyoR.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="balls">
+                </div>
+             </div>
+         </div>
+         
+         <div class="title-UT">
+            <h2>Últimos Episodios</h2>
+         </div>
+         
+         
+         <div class="utimosEp">
+             <div class="utiMa">
+                 <a href="episodios/Maoyuu Maou Yuusha/ep12.html" title="Maoyuu Maou Yuusha - Episódio 12">
+                    <img src="img/ultmEP.png">
+                    <p>Maoyuu Maou Yuusha - Episódio 12</p>
+                 </a>
+             </div>
+             <div class="utiMa">
+                 <a href="episodios/Danshi Koukousei no Nichijou/ep12.html" title="Danshi Koukousei no Nichijou - Episódio 12">
+                    <img src="img/ultmEPDashi.png">
+                    <p>Danshi Koukousei no Nichijou - Episódio 12</p>
+                </a>
+             </div>
+             <div class="utiMa">
+                 <a href="episodios/Tokyo Revens/ep8.html" title="Tokyo Ravens - Episódio 8">
+                    <img src="img/ultmEPTokyo.png">
+                    <p>Tokyo Ravens - Episódio 8</p>
+                </a>
+             </div>
+         </div>
+
+
+    </div>
+
+    
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        let balls = document.querySelector('.balls');
+        let quant = document.querySelectorAll(".slides .image");
+        let atual = 0;
+        let image = document.getElementById('atual');
+        let next =  document.getElementById('next');
+        let voltar = document.getElementById('voltar');
+        let rolar = true;
+
+        for(let i = 0; i < quant.length; i++){
+            let div = document.createElement('div');
+            div.id = i;
+            balls.appendChild(div);
+        }
+
+        document.getElementById('0').classList.add('imgAtual');
+
+        let pos = document.querySelectorAll('.balls div');
+
+        for(let i=0; i < pos.length; i++){
+            pos[i].addEventListener('click', function(){
+                atual = pos[i].id;
+                rolar = false;
+                slide();
+            })
+        }
+
+        voltar.addEventListener('click', ()=>{
+            atual--;
+            rolar = false;
+            slide();
+        })
+
+        next.addEventListener('click', ()=>{
+            atual++;
+            rolar = false;
+            slide();
+        })
+
+        function slide(){
+            if(atual >= quant.length){
+                atual = 0;
+            }else if(atual < 0){
+                atual = quant.length - 1;
+            }
+
+            document.querySelector('.imgAtual').classList.remove(".imgAtual");
+            image.style.marginLeft  = -1024 * atual + 'px';
+            document.getElementById(atual).classList.add('imgAtual');
+        }
+
+        setInterval(() =>{
+            if(rolar == true){
+                atual++;
+                slide();
+            }else{
+                rolar = true;
+            }
+        },3000)
+    </script>
+
+</body>
+</html>

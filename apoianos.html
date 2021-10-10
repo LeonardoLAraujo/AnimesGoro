@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apoia-Nos - Animes Goro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/apoanos.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <!-- Boxicons CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bx-ghost'></i>
+                <div class="logo_name">Animes Goro</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Pesquisar</span> 
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Minha Conta</span>
+                </a>
+                <span class="tooltip">Minha Conta</span>
+            </li>
+            <li>
+                <a href="listaAnime.html">
+                    <i class='bx bx-book-reader'></i>
+                    <span class="links_name">Lista de Animes</span>
+                </a>
+                <span class="tooltip">Lista de Animes</span> 
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Chat</span>
+                </a>
+               <span class="tooltip">Chat</span>
+            </li>
+            <li>
+                <a href="opening.html">
+                    <i class='bx bx-play-circle' ></i>
+                    <span class="links_name">Opening</span>
+                </a>
+                <span class="tooltip">Opening</span>
+            </li>
+            <li>
+                <a href="apoianos.html">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">Apoia - Nos</span>
+                </a>
+                <span class="tooltip">Apoia - Nos</span>
+            </li>
+            <li>
+                <a href="configuracao.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Configuração</span>
+                </a>
+                <span class="tooltip">Configuração</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="img/goroLG.jpg" alt="Me"> 
+                    <div class="name_job">
+                        <div class="name">Animes Goro</div>
+                        <div class="job">Venha Assistir</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out-circle' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="bannerApoianos"></div>
+        <h1>Apoia-Nos</h1>
+        
+        <div class="conteudo">
+            <p>Olá. Isso! é com você mesmo. Somos do Animes Goro e produzimos conteúdo para essa Página, 
+                isso por que gostamos de levar essa cultura oriental aos outros. Se você gosta do nosso projeto e
+                também é fã do nosso conteúdo, então nos ajude a continuar. Doe o que você poder!</p><br>
+
+            <p>Nosso Pix: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXX1505f3</p>
+        </div>
+
+        <div class="personagenFundo">
+            <img src="img/personagemApoianos.png">
+        </div>
+
+
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
